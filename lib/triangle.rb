@@ -9,7 +9,7 @@ class Triangle
   end
 
   def validate
-    if side1 == 0 && side2 == 0 && side3 == 0
+    if side1 == 0 || side2 == 0 || side3 == 0
       raise TriangleError
     elsif side1 < 0 || side2 < 0 || side3 < 0
       raise TriangleError
